@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import json
 import time
+import os
 
 
 def run(input_file, output_mapping, token, api_base, headers):
@@ -16,14 +17,29 @@ def run(input_file, output_mapping, token, api_base, headers):
         print("Error: 'category' column not found")
         return False
 
-    categories = df['category'].dropna().astype(str).unique()
-    print(f"Found {len(categories)} distinct categories")
-    
     mapping = {}
+    if os.path.exists(output_mapping):
+        try:
+            with open(output_mapping, 'r', encoding='utf-8') as f:
+                mapping = json.load(f)
+            print(f"Loaded existing mapping with {len(mapping)} categories")
+        except:
+            mapping = {}
+
+    categories = df['category'].dropna().astype(str).unique()
+    print(f"Found {len(categories)} distinct categories in file")
+    
+    new_count = 0
+    skip_count = 0
     
     for cat_name in categories:
         cat_name = cat_name.strip()
         if not cat_name:
+            continue
+        
+        if cat_name in mapping:
+            print(f"  {cat_name}: Already mapped (ID: {mapping[cat_name]})")
+            skip_count += 1
             continue
             
         print(f"Processing category: {cat_name}...")
@@ -35,16 +51,20 @@ def run(input_file, output_mapping, token, api_base, headers):
             resp_json = resp.json()
             
             found_id = None
-            if resp.status_code == 200 and 'data' in resp_json and 'data' in resp_json['data']:
-                results = resp_json['data']['data']
-                for item in results:
-                    if item['name'].strip() == cat_name:
-                        found_id = item['id']
-                        break
+            if resp.status_code == 200 and 'data' in resp_json:
+                results = resp_json['data']
+                if isinstance(results, dict) and 'data' in results:
+                    results = results['data']
+                if isinstance(results, list):
+                    for item in results:
+                        if item.get('name', '').strip() == cat_name:
+                            found_id = item['id']
+                            break
             
             if found_id:
                 print(f"  Found ID: {found_id}")
                 mapping[cat_name] = found_id
+                new_count += 1
             else:
                 print(f"  Not found. Creating...")
                 create_url = f"{api_base}/create"
@@ -64,6 +84,7 @@ def run(input_file, output_mapping, token, api_base, headers):
                         found_id = new_data['id']
                         print(f"  Created successfully. New ID: {found_id}")
                         mapping[cat_name] = found_id
+                        new_count += 1
                     else:
                         print(f"  Created but ID not found in response: {create_json}")
                 else:
@@ -77,5 +98,5 @@ def run(input_file, output_mapping, token, api_base, headers):
     with open(output_mapping, 'w', encoding='utf-8') as f:
         json.dump(mapping, f, ensure_ascii=False, indent=4)
         
-    print("Mapping saved.")
+    print(f"Mapping saved. New: {new_count}, Skipped: {skip_count}, Total: {len(mapping)}")
     return True
