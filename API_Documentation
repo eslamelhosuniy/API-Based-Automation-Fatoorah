@@ -1,0 +1,139 @@
+# إضافة منتج عادي
+curl 'https://api.fatoorah.sa/apiAdmin/Product/create' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,ar;q=0.8' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMSIsImp0aSI6Ijc3ZWFlNTllZGZhODM0MDhiMmUwNmYzYzg1ZTljMTU5YzU4MDA1YjhiODk2MTliMjhjY2UxNWYxZjFkMmZjMTg0ZTgwNGZjNDkxNDQ0NzI3IiwiaWF0IjoxNzY1MjgzMTU0LjUxNzExMjk3MDM1MjE3Mjg1MTU2MjUsIm5iZiI6MTc2NTI4MzE1NC41MTcxMTUxMTYxMTkzODQ3NjU2MjUsImV4cCI6MTc5NjgxOTE1NC41MTQ5OTYwNTE3ODgzMzAwNzgxMjUsInN1YiI6IjMyMDYiLCJzY29wZXMiOlsiQWRtaW4iXX0.pTaV87to1WVm4G-BMQOgCq-gjilXz3mQFgg91ofBsD87GAfuuSu3yMCyd1ozOjyWrg0g_swRnzBNl4IK2lcvky-2hfViQCN7utb0R1U8rtJmIc_nG2Xkhs3ro4JndLCOd0FJJKL-9aO6JNfr9MO7R5KUJV2Tjjv1hExcCEJ-iz5GE-HsW13ms79HchCvNhw49LZfAozfvVGYu0OrjI0SLgiHDyZqn3NYaq1c_R5j-vaii-yUn9AbQi9XkNexCRCNywOlxShvCGiRMe0olf2OVRy7tcXfGz-KE8lfM5pzhAgfdXTY0IbXi9HD0IWiqqyUG99xCBIut88YdtMRpJg1VPARgDDdmCSbqj9qwR7sL7BN_UTpAObBCqOP0DSHEKsHoayArsuz4ZyTY7t7DOMAzZQk1UXOa08ELFrAgSCCladK2ZPuij-DoH4C25Y2MDV7UXO28aEbnXx8aDMCMED3pY2HMBk7D11dEiP_Z1SRJPkj6jqK9wbaMjKlHiQ0fpB6Y97LylQd4NbadYXXVvq4QJnoS4fMgbCWeLrmF_LoF1dRSblztWK5tyysvf8nowJMeS-8kPeOJCWIqt_XN3Y0Kt2MoYCTwQFq3quCHrgOsiOrxFVp5M8iIK4dccu3tzcDzKLlGxC8p9cWF3tDidxPQB7jU9uaB9VPFfRqbXTjB7I' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfdRUlCdeEPrp2I0z' \
+  -H 'Origin: https://dev.fatoorah.sa' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://dev.fatoorah.sa/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0' \
+  -H 'login-type: admin' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw $'------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="name"\r\n\r\nتيست\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="buyPrice"\r\n\r\n50\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="salePrice"\r\n\r\n50\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="defaultParCode"\r\n\r\n50253953159\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="type"\r\n\r\n1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="unit_id"\r\n\r\n11425\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="stock_id"\r\n\r\n1726\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="first_quantity"\r\n\r\n10\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="main_cat_id"\r\n\r\n4470\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="product_type"\r\n\r\n1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="is_active"\r\n\r\n1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="is_unique"\r\n\r\n0\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="standard_barcode_type"\r\n\r\ngs1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="tag_id"\r\n\r\n1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="status"\r\n\r\n1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="is_online"\r\n\r\n1\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="salePriceWithTax"\r\n\r\n57.5\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="price_including_tax"\r\n\r\n0\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="unifiedBarcodeType"\r\n\r\n1212\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="tax[0][type]"\r\n\r\nmain\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z\r\nContent-Disposition: form-data; name="tax[0][id]"\r\n\r\n2817\r\n------WebKitFormBoundaryfdRUlCdeEPrp2I0z--\r\n'
+  
+  --------
+  # إضافة منتج مجمع
+  curl 'https://api.fatoorah.sa/apiAdmin/Product/create' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,ar;q=0.8' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMSIsImp0aSI6Ijc3ZWFlNTllZGZhODM0MDhiMmUwNmYzYzg1ZTljMTU5YzU4MDA1YjhiODk2MTliMjhjY2UxNWYxZjFkMmZjMTg0ZTgwNGZjNDkxNDQ0NzI3IiwiaWF0IjoxNzY1MjgzMTU0LjUxNzExMjk3MDM1MjE3Mjg1MTU2MjUsIm5iZiI6MTc2NTI4MzE1NC41MTcxMTUxMTYxMTkzODQ3NjU2MjUsImV4cCI6MTc5NjgxOTE1NC41MTQ5OTYwNTE3ODgzMzAwNzgxMjUsInN1YiI6IjMyMDYiLCJzY29wZXMiOlsiQWRtaW4iXX0.pTaV87to1WVm4G-BMQOgCq-gjilXz3mQFgg91ofBsD87GAfuuSu3yMCyd1ozOjyWrg0g_swRnzBNl4IK2lcvky-2hfViQCN7utb0R1U8rtJmIc_nG2Xkhs3ro4JndLCOd0FJJKL-9aO6JNfr9MO7R5KUJV2Tjjv1hExcCEJ-iz5GE-HsW13ms79HchCvNhw49LZfAozfvVGYu0OrjI0SLgiHDyZqn3NYaq1c_R5j-vaii-yUn9AbQi9XkNexCRCNywOlxShvCGiRMe0olf2OVRy7tcXfGz-KE8lfM5pzhAgfdXTY0IbXi9HD0IWiqqyUG99xCBIut88YdtMRpJg1VPARgDDdmCSbqj9qwR7sL7BN_UTpAObBCqOP0DSHEKsHoayArsuz4ZyTY7t7DOMAzZQk1UXOa08ELFrAgSCCladK2ZPuij-DoH4C25Y2MDV7UXO28aEbnXx8aDMCMED3pY2HMBk7D11dEiP_Z1SRJPkj6jqK9wbaMjKlHiQ0fpB6Y97LylQd4NbadYXXVvq4QJnoS4fMgbCWeLrmF_LoF1dRSblztWK5tyysvf8nowJMeS-8kPeOJCWIqt_XN3Y0Kt2MoYCTwQFq3quCHrgOsiOrxFVp5M8iIK4dccu3tzcDzKLlGxC8p9cWF3tDidxPQB7jU9uaB9VPFfRqbXTjB7I' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBGlpkBG8AyQHcLBA' \
+  -H 'Origin: https://dev.fatoorah.sa' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://dev.fatoorah.sa/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0' \
+  -H 'login-type: admin' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw $'------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="name"\r\n\r\nتيست مجمع\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="salePrice"\r\n\r\n30\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="defaultParCode"\r\n\r\n668576333896\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="type"\r\n\r\n1\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="unit_id"\r\n\r\n14656\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="main_cat_id"\r\n\r\n4470\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="product_type"\r\n\r\n5\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="is_active"\r\n\r\n1\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="is_unique"\r\n\r\n0\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="standard_barcode_type"\r\n\r\ngs1\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="tag_id"\r\n\r\n1\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="status"\r\n\r\n1\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="is_online"\r\n\r\n1\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="salePriceWithTax"\r\n\r\n34.5\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="price_including_tax"\r\n\r\n0\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="unifiedBarcodeType"\r\n\r\n1212\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="complex_products[0][quantity]"\r\n\r\n5\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="complex_products[0][unique_id]"\r\n\r\n37018\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="complex_products[0][discount]"\r\n\r\n0\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="tax[0][type]"\r\n\r\nmain\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA\r\nContent-Disposition: form-data; name="tax[0][id]"\r\n\r\n2817\r\n------WebKitFormBoundaryBGlpkBG8AyQHcLBA--\r\n'
+
+
+  ---------
+  # بحث في الوحدات
+  curl 'https://api.fatoorah.sa/apiAdmin/MajorUnit/all?page=1&test=1&limit=1&per_page=20&totalPage=1&totalItems=1&keyword=%D8%AC%D8%AF%D9%8A%D8%AF' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,ar;q=0.8' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMSIsImp0aSI6Ijc3ZWFlNTllZGZhODM0MDhiMmUwNmYzYzg1ZTljMTU5YzU4MDA1YjhiODk2MTliMjhjY2UxNWYxZjFkMmZjMTg0ZTgwNGZjNDkxNDQ0NzI3IiwiaWF0IjoxNzY1MjgzMTU0LjUxNzExMjk3MDM1MjE3Mjg1MTU2MjUsIm5iZiI6MTc2NTI4MzE1NC41MTcxMTUxMTYxMTkzODQ3NjU2MjUsImV4cCI6MTc5NjgxOTE1NC41MTQ5OTYwNTE3ODgzMzAwNzgxMjUsInN1YiI6IjMyMDYiLCJzY29wZXMiOlsiQWRtaW4iXX0.pTaV87to1WVm4G-BMQOgCq-gjilXz3mQFgg91ofBsD87GAfuuSu3yMCyd1ozOjyWrg0g_swRnzBNl4IK2lcvky-2hfViQCN7utb0R1U8rtJmIc_nG2Xkhs3ro4JndLCOd0FJJKL-9aO6JNfr9MO7R5KUJV2Tjjv1hExcCEJ-iz5GE-HsW13ms79HchCvNhw49LZfAozfvVGYu0OrjI0SLgiHDyZqn3NYaq1c_R5j-vaii-yUn9AbQi9XkNexCRCNywOlxShvCGiRMe0olf2OVRy7tcXfGz-KE8lfM5pzhAgfdXTY0IbXi9HD0IWiqqyUG99xCBIut88YdtMRpJg1VPARgDDdmCSbqj9qwR7sL7BN_UTpAObBCqOP0DSHEKsHoayArsuz4ZyTY7t7DOMAzZQk1UXOa08ELFrAgSCCladK2ZPuij-DoH4C25Y2MDV7UXO28aEbnXx8aDMCMED3pY2HMBk7D11dEiP_Z1SRJPkj6jqK9wbaMjKlHiQ0fpB6Y97LylQd4NbadYXXVvq4QJnoS4fMgbCWeLrmF_LoF1dRSblztWK5tyysvf8nowJMeS-8kPeOJCWIqt_XN3Y0Kt2MoYCTwQFq3quCHrgOsiOrxFVp5M8iIK4dccu3tzcDzKLlGxC8p9cWF3tDidxPQB7jU9uaB9VPFfRqbXTjB7I' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: https://dev.fatoorah.sa' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://dev.fatoorah.sa/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0' \
+  -H 'lang: ar' \
+  -H 'login-type: admin' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"'
+#
+
+  -----
+
+# بحث في الفئات
+  curl 'https://api.fatoorah.sa/apiAdmin/Category/all?page=1&test=1&limit=1&per_page=20&totalPage=1&totalItems=0&keyword=%D9%81%D8%A6%D8%A9' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,ar;q=0.8' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMSIsImp0aSI6ImUzYTZiMGIyNDczZjJhY2MwOWYxYzMyODAxZDEwYmFmMTkwMjgzMDNlNTA1MTg5ODZkNzM0NDJlNmNkZTcwYjRkZTZiNTE1ZWVmZjRhOTU5IiwiaWF0IjoxNzY1NDQ2MjE2LjIwOTM5ODk4NDkwOTA1NzYxNzE4NzUsIm5iZiI6MTc2NTQ0NjIxNi4yMDkzOTk5Mzg1ODMzNzQwMjM0Mzc1LCJleHAiOjE3OTY5ODIyMTYuMjA3NzMxMDA4NTI5NjYzMDg1OTM3NSwic3ViIjoiMzQyOSIsInNjb3BlcyI6WyJBZG1pbiJdfQ.Ul2AD2uuSdefQTBbQX94m_YG_FIzJAiNYhNHo8tVNzEj2pQMWU2cZYeO0BouxqkNJ2fzXwoYfzEYO9jHzCQZWAMTO2d2Uo-8s1rzXKdoS46biLcNeGIACgmvzdqUGUgW4aJLy8TASPQO4ujLVpsPB6N0akIUJxXEq8apWvrJcLvDMAMLzDpKddXHIuMlwmmVUSbF2MN48mo9NWzwtgBjHuCNdmYaHmEwJz5Nm2C-P7WAMElHZmEIVmGa5i-3aBAkNMQDmKtWsDCkXufb2wnrGf0iKFMYFPMu19J32aSG2tFOEYOAQzvrdtBhjMOJyvmoBq5_DHWx48OW3lDE3QsXWQRcPTEA-OTD_jmapQT_nKDYPin5O-OodlTuCGQ03J7i702c9gqucLWqONpz-b5wFqpJQJxG2ci_tWHtzrYeoKghtqPHvbtALAtr3f3h6aGqayXASv1-aeRRYupULtE7E5KoxK45LHd3aBl_lP6-7-I58HAK2qpLSL7QhD-qjBdRvXYDB-2wWvUDAqO5Hrlrv_tP-tmNdMfYIlN2mJkV_tQOWZviuQUsL65vv8fDzo03B-ERYAYIi_ql0N0Z4pQlOdbMRrUYCT-ZDRsKXcY3xaA6z_kDx4-OQbqPFfKR9B4xsknmGeUJF3BGPrUrUsjq8d9Y2g_raFUOeDvbcSIbe4Q' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Origin: https://dev.fatoorah.sa' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://dev.fatoorah.sa/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0' \
+  -H 'lang: ar' \
+  -H 'login-type: admin' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"'
+
+  #response
+  {"status":1,"message":"","data":{"data":[{"id":4471,"uuid":"77c6bda5-9d57-450c-a3e9-887f83a0a14f","name":"\u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0627\u062a","description":"\u0641\u0626\u0629 \u062e\u0627\u0635\u0629 \u0628\u0643\u0644 \u0645\u0627 \u0647\u0648 \u0627\u0644\u0643\u062a\u0631\u0648\u0646\u064a","status":1,"identification_number":"CAT-2","level":1,"client_id":1499,"cat_id":0,"parent":null},{"id":4470,"uuid":"3905c0ed-5068-4a55-8f5d-53efc3f5f6f1","name":"\u0627\u0644\u0641\u0626\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629","description":null,"status":1,"identification_number":"CAT-1","level":1,"client_id":1499,"cat_id":0,"parent":null}],"pagination":{"total":2,"count":2,"per_page":"20","current_page":1,"total_pages":1}}}
+
+
+  ------------
+# إضافة وحدة قياس
+  curl 'https://api.fatoorah.sa/apiAdmin/MajorUnit/create' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,ar;q=0.8' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMSIsImp0aSI6ImUzYTZiMGIyNDczZjJhY2MwOWYxYzMyODAxZDEwYmFmMTkwMjgzMDNlNTA1MTg5ODZkNzM0NDJlNmNkZTcwYjRkZTZiNTE1ZWVmZjRhOTU5IiwiaWF0IjoxNzY1NDQ2MjE2LjIwOTM5ODk4NDkwOTA1NzYxNzE4NzUsIm5iZiI6MTc2NTQ0NjIxNi4yMDkzOTk5Mzg1ODMzNzQwMjM0Mzc1LCJleHAiOjE3OTY5ODIyMTYuMjA3NzMxMDA4NTI5NjYzMDg1OTM3NSwic3ViIjoiMzQyOSIsInNjb3BlcyI6WyJBZG1pbiJdfQ.Ul2AD2uuSdefQTBbQX94m_YG_FIzJAiNYhNHo8tVNzEj2pQMWU2cZYeO0BouxqkNJ2fzXwoYfzEYO9jHzCQZWAMTO2d2Uo-8s1rzXKdoS46biLcNeGIACgmvzdqUGUgW4aJLy8TASPQO4ujLVpsPB6N0akIUJxXEq8apWvrJcLvDMAMLzDpKddXHIuMlwmmVUSbF2MN48mo9NWzwtgBjHuCNdmYaHmEwJz5Nm2C-P7WAMElHZmEIVmGa5i-3aBAkNMQDmKtWsDCkXufb2wnrGf0iKFMYFPMu19J32aSG2tFOEYOAQzvrdtBhjMOJyvmoBq5_DHWx48OW3lDE3QsXWQRcPTEA-OTD_jmapQT_nKDYPin5O-OodlTuCGQ03J7i702c9gqucLWqONpz-b5wFqpJQJxG2ci_tWHtzrYeoKghtqPHvbtALAtr3f3h6aGqayXASv1-aeRRYupULtE7E5KoxK45LHd3aBl_lP6-7-I58HAK2qpLSL7QhD-qjBdRvXYDB-2wWvUDAqO5Hrlrv_tP-tmNdMfYIlN2mJkV_tQOWZviuQUsL65vv8fDzo03B-ERYAYIi_ql0N0Z4pQlOdbMRrUYCT-ZDRsKXcY3xaA6z_kDx4-OQbqPFfKR9B4xsknmGeUJF3BGPrUrUsjq8d9Y2g_raFUOeDvbcSIbe4Q' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Origin: https://dev.fatoorah.sa' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://dev.fatoorah.sa/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0' \
+  -H 'lang: ar' \
+  -H 'login-type: admin' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"identification_number":"","short_code":" \"\"","name":"تيست","change_rate":0,"description":"","unit_type":"main","status":true}'
+
+------
+
+إضافة فئة
+
+curl 'https://api.fatoorah.sa/apiAdmin/Category/create' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.9,ar;q=0.8' \
+  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxMSIsImp0aSI6ImUzYTZiMGIyNDczZjJhY2MwOWYxYzMyODAxZDEwYmFmMTkwMjgzMDNlNTA1MTg5ODZkNzM0NDJlNmNkZTcwYjRkZTZiNTE1ZWVmZjRhOTU5IiwiaWF0IjoxNzY1NDQ2MjE2LjIwOTM5ODk4NDkwOTA1NzYxNzE4NzUsIm5iZiI6MTc2NTQ0NjIxNi4yMDkzOTk5Mzg1ODMzNzQwMjM0Mzc1LCJleHAiOjE3OTY5ODIyMTYuMjA3NzMxMDA4NTI5NjYzMDg1OTM3NSwic3ViIjoiMzQyOSIsInNjb3BlcyI6WyJBZG1pbiJdfQ.Ul2AD2uuSdefQTBbQX94m_YG_FIzJAiNYhNHo8tVNzEj2pQMWU2cZYeO0BouxqkNJ2fzXwoYfzEYO9jHzCQZWAMTO2d2Uo-8s1rzXKdoS46biLcNeGIACgmvzdqUGUgW4aJLy8TASPQO4ujLVpsPB6N0akIUJxXEq8apWvrJcLvDMAMLzDpKddXHIuMlwmmVUSbF2MN48mo9NWzwtgBjHuCNdmYaHmEwJz5Nm2C-P7WAMElHZmEIVmGa5i-3aBAkNMQDmKtWsDCkXufb2wnrGf0iKFMYFPMu19J32aSG2tFOEYOAQzvrdtBhjMOJyvmoBq5_DHWx48OW3lDE3QsXWQRcPTEA-OTD_jmapQT_nKDYPin5O-OodlTuCGQ03J7i702c9gqucLWqONpz-b5wFqpJQJxG2ci_tWHtzrYeoKghtqPHvbtALAtr3f3h6aGqayXASv1-aeRRYupULtE7E5KoxK45LHd3aBl_lP6-7-I58HAK2qpLSL7QhD-qjBdRvXYDB-2wWvUDAqO5Hrlrv_tP-tmNdMfYIlN2mJkV_tQOWZviuQUsL65vv8fDzo03B-ERYAYIi_ql0N0Z4pQlOdbMRrUYCT-ZDRsKXcY3xaA6z_kDx4-OQbqPFfKR9B4xsknmGeUJF3BGPrUrUsjq8d9Y2g_raFUOeDvbcSIbe4Q' \
+  -H 'Cache-Control: no-cache' \
+  -H 'Connection: keep-alive' \
+  -H 'Content-Type: application/json' \
+  -H 'Origin: https://dev.fatoorah.sa' \
+  -H 'Pragma: no-cache' \
+  -H 'Referer: https://dev.fatoorah.sa/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0' \
+  -H 'lang: ar' \
+  -H 'login-type: admin' \
+  -H 'sec-ch-ua: "Microsoft Edge";v="141", "Not?A_Brand";v="8", "Chromium";v="141"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  --data-raw '{"name":"تيست","identification_number":"","description":"","status":true}'
